@@ -12,5 +12,4 @@ jobs:
     steps:
     - name: Trigger CKB Platform
       run: |
-        curl -X POST           -H "Content-Type: application/json"           -d '{"commit": "${{ github.sha }}", "repository": "${{ github.repository }}"}'           https://dl529nfz-8000.euw.devtunnels.ms/tgms/trigger
-                    
+        curl -X POST -H "Content-Type: application/json" -d '{"test":"data"}' https://dl529nfz-8000.euw.devtunnels.ms/aes/webhook-endpoint                    
