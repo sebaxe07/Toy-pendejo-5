@@ -16,7 +16,7 @@ jobs:
           "commit_sha":"${{ github.sha }}",
           "branch":"${{ github.ref }}",
           "commit_message":"${{ github.event.head_commit.message }}",
-          "author":"${{ github.actor }}"
+          "author":"${{ github.actor }}",
           "repo":"${{ github.repository }}"
         }' \
         https://dl529nfz-8000.euw.devtunnels.ms/aes/webhook-endpoint                    
